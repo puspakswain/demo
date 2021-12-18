@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: product
+  cloud:
+    config:
+      failFast: false
+      discovery:
+        enabled: false
+      uri: http://configserver:8080
+server:
+  port: 8080
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      base-path: /

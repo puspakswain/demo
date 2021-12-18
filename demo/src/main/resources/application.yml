@@ -1,0 +1,31 @@
+logging:
+  level:
+    com.example: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type: DEBUG
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+
+spring:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: false
+    properties:
+      hibernate.format_sql: true
+  cache:
+    type: redis
+    redis:
+      cache-null-values: true
+      #time-to-live: 4000
+
+api:
+  key: aaface6d-f3a6-497c-8e16-8a5367cae05f 
+
+product:
+    title: Product Catalog Platform
+    description: This platform will be used to manage products the company sells
+    
+
+spring.mvc.async.request-timeout: 600000
+  
